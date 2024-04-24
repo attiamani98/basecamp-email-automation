@@ -7,7 +7,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'Basecamp-Email-Forwarding-automation'   
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'       
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: './TimerTrigger'       
   PYTHON_VERSION: '3.11'                    
 
 jobs:

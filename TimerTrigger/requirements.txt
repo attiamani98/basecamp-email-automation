@@ -1,7 +1,3 @@
-# DO NOT include azure-functions-worker in this file
-# The Python Worker is managed by Azure Functions platform
-# Manually managing azure-functions-worker may cause unexpected issues
-# version https://git-lfs.github.com/spec/v1
-
-azure-functions
-basecampy3
+version https://git-lfs.github.com/spec/v1
+oid sha256:041110e1aedd57fe0368bf6e9bf95890086d9c7edc68cc1666a541dc91c7d861
+size 255

@@ -21,7 +21,7 @@ def main(basecamptrriger: func.TimerRequest) -> None:
     logging.info('Azure Function processed a request.')
 
     # Retrieve environment variables
-    REFRESH_TOKEN = os.environ["BASECAMP_PROJECT_ID"]
+    REFRESH_TOKEN = os.environ["BASECAMP_REFRESH_TOKEN"]
     BASECAMP_CLIENT_ID = os.environ["BASECAMP_CLIENT_ID"]
     BASECAMP_CLIENT_SECRET = os.environ["BASECAMP_CLIENT_SECRET"]
     project_id = os.environ["BASECAMP_PROJECT_ID"]

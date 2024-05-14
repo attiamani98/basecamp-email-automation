@@ -21,9 +21,12 @@ def main(basecamptrriger: func.TimerRequest) -> None:
     logging.info('Azure Function processed a request.')
 
     # Retrieve environment variables
-    access_token = os.environ['BASECAMP_ACCESS_TOKEN']
+    REFRESH_TOKEN = os.environ["BASECAMP_PROJECT_ID"]
+    BASECAMP_CLIENT_ID = os.environ["BASECAMP_CLIENT_ID"]
+    BASECAMP_CLIENT_SECRET = os.environ["BASECAMP_CLIENT_SECRET"]
     project_id = os.environ["BASECAMP_PROJECT_ID"]
     project_name = os.environ["BASECAMP_PROJECT_Name"]
+    access_token = session.post('https://launchpad.37signals.com/authorization/token?type=refresh&refresh_token=${REFRESH_TOKEN}&client_id=${BASECAMP_CLIENT_ID}&client_secret=${BASECAMP_CLIENT_SECRET}')
 
     session = bc3.session
     headers = {

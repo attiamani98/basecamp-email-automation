@@ -6,7 +6,6 @@
       "AzureWebJobsStorage": "",
       "BASECAMP_TOKEN" :"",
       "BASECAMP_ACCOUNT_ID" : "",
-      "BASECAMP_ACCESS_TOKEN" : "",
       "BASECAMP_PROJECT_ID" : "",
       "BASECAMP_PROJECT_Name" :"",
       "azureFunctions.scmDoBuildDuringDeployment": true
